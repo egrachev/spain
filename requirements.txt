@@ -1,0 +1,8 @@
+Django==1.8.1
+MySQL-python
+
+# InsecurePlatformWarning
+pyopenssl
+ndg-httpsclient
+pyasn1
+# InsecurePlatformWarning
