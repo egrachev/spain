@@ -1,3 +1,10 @@
-from django.contrib import admin
+# -*- coding: utf-8 -*-
 
-# Register your models here.
+from django.contrib import admin
+from .models import Page
+
+
+class PageAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',)}
+
+admin.site.register(Page, PageAdmin)

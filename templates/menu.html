@@ -1,14 +1,14 @@
 <ul class="menu">
     <li>
-        <a href="#">Главная</a>
+        <a href="/">Главная</a>
     </li>
     <li>
-        <a href="#">История страны</a>
+        <a href="{% url 'page_view' slug='history' %}">История страны</a>
     </li>
     <li>
-        <a href="#">Справочная информация</a>
+        <a href="{% url 'page_view' slug='help' %}">Справочная информация</a>
     </li>
     <li>
-        <a href="#">Достопримечательности</a>
+        <a href="{% url 'page_view' slug='places' %}">Достопримечательности</a>
     </li>
 </ul>

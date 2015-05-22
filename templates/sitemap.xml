@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl" ?>
+<pages>
+        <page>
+            <title>Главная</title>
+            <url>/</url>
+        </page>
+    {% for page in pages %}
+        <page>
+            <title>{{ page.title }}</title>
+            <url>{% url 'page_view' slug=page.slug %}</url>
+        </page>
+    {% endfor %}
+</pages>
